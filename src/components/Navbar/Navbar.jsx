@@ -1,23 +1,18 @@
 import React from 'react';
-import navbar from './navbar.module.css'
+import styles from './navbar.module.css';
 
 export function Navbar() {
-    return(
-        <div className={navbar.navbar}>
-            <img src="./public/images/trekkr-logo.jpg" alt="trekkr-logo" className={navbar.logo} />
-            <ul className={navbar.list}>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Perfil</li>
-            </ul>
-
-            <div className={navbar.seach}>
-                <input className={navbar.inputseach} type="text" placeholder='Procurar' />
-                <img className={navbar.seachicon} src="./public/images/pesquisar.jpg" alt="" />
+    return (
+        <div className={styles.navbar}>
+            <img src="/images/trekkr-logo.jpg" alt="Trekkr Logo" className={styles.logo} />
+            <h1>TREKKR</h1>
+            
+            <div className={styles.search}>
+                <input className={styles.inputSearch} type="text" placeholder="Procurar" />
+                <img className={styles.searchIcon} src="./public/images/pesquisar.jpg" alt="Ícone de pesquisa" />
             </div>
 
-            <img src="./public/images/trekkr-logo.jpg" alt="profile" className={navbar.profile} />
+            <img src="/images/trekkr-logo.jpg" alt="Profile" className={styles.profile} />
         </div>
-    )
+    );
 }

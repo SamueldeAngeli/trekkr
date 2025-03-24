@@ -5,6 +5,6 @@ import { Login } from './conteiners/Login/Login';
 
 ReactDOM.createRoot(document.getElementById('app')).render(
   <React.StrictMode>
-    <Login />
+    <Home />
   </React.StrictMode>
 );
